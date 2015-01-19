@@ -19,13 +19,16 @@ int main()
 	printf("Starting Sasha's debug thing.\n");
 
 	printf("NWPC:    ");
-	products[0].getPriceForQuantity(2);
+	NWPC* thing1 = (NWPC*)&products[0];
+	thing1->getPriceForQuantity(2);
 
 	printf("Product: ");
-	products[1].getPriceForQuantity(2);
+	Product* thing2 = (Product*)&products[1];
+	thing2->getPriceForQuantity(2);
 
 	printf("Software:");
-	products[3].getPriceForQuantity(2);
+	Software* thing3 = (Software*)&products[3];
+	thing3->getPriceForQuantity(2);
 
 	printf("Ending Sasha's debug thing.\n");
 
