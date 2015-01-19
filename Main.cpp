@@ -16,6 +16,19 @@ Product products[] = {
 
 int main()
 {
+	printf("Starting Sasha's debug thing.\n");
+
+	printf("NWPC:    ");
+	products[0].getPriceForQuantity(2);
+
+	printf("Product: ");
+	products[1].getPriceForQuantity(2);
+
+	printf("Software:");
+	products[2].getPriceForQuantity(2);
+
+	printf("Ending Sasha's debug thing.\n");
+
 	//create a new cart object
 	Cart cart = Cart();
 	std::string customerName;
