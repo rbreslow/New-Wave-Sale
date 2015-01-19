@@ -25,7 +25,7 @@ int main()
 	products[1].getPriceForQuantity(2);
 
 	printf("Software:");
-	products[2].getPriceForQuantity(2);
+	products[3].getPriceForQuantity(2);
 
 	printf("Ending Sasha's debug thing.\n");
 
