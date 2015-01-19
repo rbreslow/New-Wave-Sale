@@ -10,7 +10,7 @@ public:
 	NWPC() : Product() {};
 	NWPC(std::string name, double price) : Product(name, price) {};
 
-	virtual double getPriceForQuantity(int quantity);
+	double getPriceForQuantity(int quantity);
 };
 
 #endif

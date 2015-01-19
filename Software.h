@@ -10,7 +10,7 @@ public:
 	Software() : Product() {};
 	Software(std::string name, double price) : Product(name, price) {};
 
-	virtual double getPriceForQuantity(int quantity) = 0;
+	double getPriceForQuantity(int quantity);
 };
 
 #endif

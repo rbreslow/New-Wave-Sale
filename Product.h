@@ -14,7 +14,7 @@ public:
 
 	std::string getName();
 	double getUnitPrice();
-	virtual double getPriceForQuantity(int quantity) = 0;
+	double getPriceForQuantity(int quantity);
 };
 
 #endif
