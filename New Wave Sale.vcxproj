@@ -18,6 +18,7 @@
     <ClCompile Include="MemoryCardPromo.cpp" />
     <ClCompile Include="NWPC.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="Promotion.cpp" />
     <ClCompile Include="Software.cpp" />
   </ItemGroup>
   <ItemGroup>

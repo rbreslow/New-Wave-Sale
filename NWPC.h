@@ -1,13 +1,15 @@
-#ifndef MEMPROMO_H
-#define MEMPROMO_H
+#ifndef NWPC_H
+#define NWPC_H
 
 #include <string>
 #include "Product.h"
 
 class NWPC : public Product
 {
-	friend class Product;
 public:
+	NWPC() : Product() {};
+	NWPC(std::string name, double price) : Product(name, price) {};
+
 	double getPriceForQuantity(int quantity);
 };
 

@@ -9,6 +9,7 @@
     <ClCompile Include="MemoryCardPromo.cpp" />
     <ClCompile Include="NWPC.cpp" />
     <ClCompile Include="Software.cpp" />
+    <ClCompile Include="Promotion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cart.h" />

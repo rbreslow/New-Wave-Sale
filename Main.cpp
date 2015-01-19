@@ -8,10 +8,10 @@
 
 //product constructor format is: name, price
 Product products[] = {
-	//NWPC("NW-PC", 675.00),
+	NWPC("NW-PC", 675.00),
 	Product("Memory Card", 69.95),
 	Product("Disk Drive", 198.50),
-	//Software("Software", 34.98),
+	Software("Software", 34.98),
 };
 
 int main()
