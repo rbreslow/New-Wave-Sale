@@ -4,9 +4,7 @@
 #include "Software.h"
 
 double Software::getPriceForQuantity(int quantity)
-{
-	printf("Hello from Software's method!  Also Jerry is a faggot!\n"); 
-	
+{	
 	if (quantity == 1) {
 		return 34.98 * quantity;
 	}
