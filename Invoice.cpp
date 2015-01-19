@@ -1,5 +1,4 @@
 #include <string>
-#include <vector>
 #include <stdio.h>
 #include "Product.h"
 #include "Item.h"
@@ -11,11 +10,10 @@ Invoice::Invoice(Cart cart, std::string customerName)
 	this->cart = cart;
 	this->customerName = customerName;
 
-	//promotions
+	//TODO: promotions
 
 	this->origPrice = this->cart.getTotalRegPrice();
-};
-
+}
 void Invoice::print()
 {
 	double totalPrice = 0.00;
@@ -25,7 +23,9 @@ void Invoice::print()
 	printf("\tNew Wave Computers\n\tCUSTOMER: %s\n\n", customerName.c_str());
 	printf("%-15s %-30s %s\n", "Quantity", "ITEM", "COST");
 
-	for (Item item : cart.getContents()) {
+	for (int i = 0; i < cart.getTotalItems(); i++) {
+		Item item = cart.getItem(i);
+
 		Product product = item.getProduct();
 		int quantity = item.getQuantity();
 		double price = item.getPrice();

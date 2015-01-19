@@ -12,7 +12,8 @@ class Cart
 
 public:
 	void addToCart(Product product, int quantity);
-	std::vector<Item> getContents();
+	Item getItem(int i);
+	int getTotalItems();
 	void setContents(std::vector<Item> contents);
 	double getTotalRegPrice();
 };

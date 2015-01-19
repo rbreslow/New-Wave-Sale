@@ -7,15 +7,19 @@
 void Cart::addToCart(Product product, int quantity) 
 {
 	this->contents.insert(this->contents.begin(), Item(product, quantity));
-};
-std::vector<Item> Cart::getContents() 
+}
+Item Cart::getItem(int i) 
 {
-	return this->contents; 
-};
+	return this->contents[i];
+}
+int Cart::getTotalItems()
+{
+	return this->contents.size();
+}
 void Cart::setContents(std::vector<Item> contents)
 {
 	this->contents = contents;
-};
+}
 double Cart::getTotalRegPrice()
 {
 	double totalRegPrice = 0.00;
@@ -25,4 +29,4 @@ double Cart::getTotalRegPrice()
 	}
 
 	return totalRegPrice;
-};
+}
