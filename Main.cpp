@@ -18,17 +18,15 @@ int main()
 {
 	printf("Starting Sasha's debug thing.\n");
 
-	printf("NWPC:    ");
-	NWPC* thing1 = (NWPC*)&products[0];
-	thing1->getPriceForQuantity(2);
+	NWPC thing1("NW-PC", 675.00);
+	Product thing2("Memory Card", 69.95);
+	Product thing3("Disk Drive", 198.50);
+	Software thing4("Software", 34.98);
 
-	printf("Product: ");
-	Product* thing2 = (Product*)&products[1];
-	thing2->getPriceForQuantity(2);
-
-	printf("Software:");
-	Software* thing3 = (Software*)&products[3];
-	thing3->getPriceForQuantity(2);
+	thing1.getPriceForQuantity(0);
+	thing2.getPriceForQuantity(0);
+	thing3.getPriceForQuantity(0);
+	thing4.getPriceForQuantity(0);
 
 	printf("Ending Sasha's debug thing.\n");
 
