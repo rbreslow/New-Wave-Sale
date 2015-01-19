@@ -46,7 +46,7 @@ void Invoice::print()
 	printf("\n\t\t%-30s %.2f", "SUB TOTAL", totalPrice);
 	totalPrice = totalPrice - (totalPrice * 0.10);
 	printf("\n\t\t%-30s %.2f", "TOTAL WITH 10% DISCOUNT", totalPrice);
-	printf("\n\t\t%-30s %.2f", "TAX", totalPrice * 0.06);
+	printf("\n\t\t%-30s %.2f", "TAX", (totalPrice * 0.06));
 	totalPrice = totalPrice + (totalPrice * 0.06);
 	printf("\n\t\t%-30s %.2f", "TOTAL", totalPrice);
 
