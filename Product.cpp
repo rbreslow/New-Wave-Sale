@@ -19,6 +19,7 @@ double Product::getUnitPrice()
 { 
 	return this->unitPrice; 
 }
-double Product::getPriceForQuantity(int quantity) { 
+double Product::getPriceForQuantity(int quantity) {
+	printf("Hello from product's method!  Also Jerry is a faggot!\n"); 
 	return this->unitPrice * quantity; 
 }
