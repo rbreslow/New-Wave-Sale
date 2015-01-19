@@ -6,11 +6,18 @@
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="MemoryCardPromo.cpp" />
+    <ClCompile Include="NWPC.cpp" />
+    <ClCompile Include="Software.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cart.h" />
     <ClInclude Include="Invoice.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Product.h" />
+    <ClInclude Include="Promotion.h" />
+    <ClInclude Include="MemoryCardPromo.h" />
+    <ClInclude Include="NWPC.h" />
+    <ClInclude Include="Software.h" />
   </ItemGroup>
 </Project>

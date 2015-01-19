@@ -16,6 +16,10 @@ int Cart::getTotalItems()
 {
 	return this->contents.size();
 }
+std::vector<Item> Cart::getContents()
+{
+	return this->contents;
+}
 void Cart::setContents(std::vector<Item> contents)
 {
 	this->contents = contents;

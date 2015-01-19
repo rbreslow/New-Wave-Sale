@@ -3,11 +3,15 @@
 #include "Product.h"
 #include "Cart.h"
 #include "Invoice.h"
+#include "NWPC.h"
+#include "Software.h"
 
 //product constructor format is: name, price
 Product products[] = {
+	//NWPC("NW-PC", 675.00),
 	Product("Memory Card", 69.95),
 	Product("Disk Drive", 198.50),
+	//Software("Software", 34.98),
 };
 
 int main()

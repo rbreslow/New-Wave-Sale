@@ -4,13 +4,21 @@
 #include "Item.h"
 #include "Cart.h"
 #include "Invoice.h"
+#include "Promotion.h"
+#include "MemoryCardPromo.h"
+
+Promotion promotions[] = {
+	MemoryCardPromo(),
+};
 
 Invoice::Invoice(Cart cart, std::string customerName)
 {
 	this->cart = cart;
 	this->customerName = customerName;
 
-	//TODO: promotions
+	for (Promotion promotion : promotions) {
+		cart = promotion.calculate(cart);
+	}
 
 	this->origPrice = this->cart.getTotalRegPrice();
 }
